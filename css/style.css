@@ -1,0 +1,651 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header_flexible {
+    background-color: rgb(53 58 64);
+    display: flex;
+    justify-content: center;
+}
+.contenedor_header {
+    display: flex;
+    width: 95%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-left: 3rem;
+    color: white;
+}
+.logo h3 {
+    font-size: 1.5rem;
+}
+.imagen_logo {
+    width:20%;
+}
+
+.navegador {   
+    padding-right: 3rem;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.texto_blanco {
+    color: white;
+}
+.texto_blanco:hover {
+    color: white;
+}
+.texto_gris {
+    color: rgb(179, 177, 177);
+}
+.texto_gris:hover {
+    color: white;
+}
+.texto_verde {
+    color: rgb(29, 198, 29);
+}
+.texto_verde:hover {
+    color: rgb(30, 255, 30);
+}
+
+.seccion_principal {
+    background-image: linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)), url("../assets/imagenes/ba1.jpg");
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.contenido_principal {
+    width: 44%;
+    text-align: right;
+    color:white;
+    padding-right: 6rem;
+}
+/*
+.parrafo_principal {
+    
+}
+*/
+
+.seccion_tarjetas {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo_tarjetas {
+    text-align: center;
+}
+.titulo_tarjetas h2 {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+}
+.titulo_tarjetas h5 {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+    color: gray;
+}
+.main_tarjetas {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor_flex_tarjetas {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.tarjetas {
+    background-color: white;
+    width: 30%;
+    border:1px solid rgb(214, 214, 214);
+    border-radius: 10px;
+}
+.imagen_tarjetas {
+    width: 100%;
+}
+.contenido_tarjetas {
+    padding:1rem;
+}
+.parrafo_tarjetas {
+    width: 95%;
+    text-align: left;
+    font-size: 0.9rem;
+}
+.texto_negro {
+    color: black;
+}
+
+.seccion_dividida {
+    display: flex;
+    height: 70vh;
+    padding-top: 1.5rem;
+}
+.contenido_izquierda {
+    display: flex;
+    width: 50%;
+    background-image: url("../assets/imagenes/fondoPlaya.jpg");
+    background-size: cover;
+}
+
+.contenido_derecha {
+    height: 100%;
+    width: 50%;
+    padding: 2rem;
+    background-color: rgb(53 58 64);
+    color:white;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+}
+.parrafo_derecha {
+    font-size: 1rem;
+}
+
+
+.seccion_forms {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor_forms {
+    width: 50%;
+    margin: 0 auto;
+}
+.titulo_forms {
+    text-align: center;
+}
+.titulo_forms h2 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+.titulo_forms h5 {
+    font-size: 0.8rem;
+    margin-bottom: 0.05rem;
+    color: gray;
+}
+.subrayado {
+    border-bottom: 1px dotted;
+}
+/*
+.formularios {
+
+}
+*/
+.nombre_apellido {
+    display: flex;
+    justify-content: space-between;
+}
+.nombre {
+    width: 48%;
+}
+.apellido {
+    width: 48%;
+}
+.area_texto {
+    height: 15vh;
+}
+.recordatorio {
+    font-size: 0.8rem;
+}
+
+.btn_enviar {
+    width: 100%;
+}
+
+.fondo_footer {
+    background-color: rgb(29, 58, 74);
+}
+.contenedor_footer {
+    width: 80%;
+    margin: 0 auto;
+}
+.row {
+    --bs-gutter-x: 0;
+    text-align: center;
+    align-items: center;
+}
+.row a:hover {
+    color: rgb(116, 117, 117);;
+}
+
+@media screen and (min-width: 350px) and (max-width: 420px) {
+
+    .header_flexible {
+        padding-bottom: 25px;
+    }
+    .contenedor_header {
+        max-width: 90%;
+        flex-direction: column;
+    }
+    .logo {
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 0;
+        padding-right: 5rem;
+        margin-bottom: 0.5rem;
+    }
+    .logo h3 {
+        font-size: 1.5rem;
+    }
+    .imagen_logo {
+        width: 40%;
+    }
+    .navegador {
+        width: 100%;
+        flex-direction: column;
+        padding-right: initial;
+    }
+    .link {
+        border-bottom: 1px solid gray;
+        display: inline-block;
+        width: 100%;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+        padding-left: 0.8rem;
+        font-size: 1rem;
+    }
+        
+
+    .seccion_principal {
+        height: 80vh;
+        justify-content: center;
+    }
+    .contenido_principal {
+        width: 90%;
+        text-align: left;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1.1rem;
+    }
+    .contenido_principal a {
+        margin-bottom: 1rem;
+    }
+
+    .contenedor_sections {
+        display: flex;
+        flex-direction: column;
+    }
+    .seccion_tarjetas {
+        padding-bottom: 0;
+    }
+    .titulo_tarjetas {
+        padding-top: 0.3rem;
+        padding-bottom: 0.5rem;
+    }
+    .titulo_tarjetas h2 {
+        font-size: 2.8rem;
+    }
+    .titulo_tarjetas h5 {
+        font-size: 1.2rem;
+    }
+    .contenedor_flex_tarjetas {
+        flex-direction: column;
+        align-items: center;    
+    }
+    .tarjetas {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .contenido_tarjetas h3 {
+        font-size: 2rem;
+    }
+    .subtitulos_tarjetas {
+        font-size: 1.3rem;
+    }
+    .parrafo_tarjetas {
+        font-size: 1rem;
+    }
+
+    .seccion_dividida {
+        padding-top: 1rem;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    .contenido_izquierda {
+        height: 50vh;
+        width: 100%;
+        background-position: center;
+    }
+    .contenido_derecha {
+        width: 100%;
+        padding: 1.6rem;
+        font-size: 1.3rem; 
+    }
+    .contenido_derecha h2 {
+        font-size: 2rem;
+    }
+    .parrafo_derecha {
+        font-size: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.7rem;
+    }
+
+    .contenedor_forms {
+        width: 80%;
+    }
+    .titulo_forms h2 {
+        font-size: 2.5rem;
+        margin-bottom: 0.3rem;
+    }
+    .titulo_forms h5 {
+        font-size: 0.9rem;
+        margin-bottom: 0.05rem;
+        color: gray;
+    }
+    .titulo_forms p {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 0.9rem;
+    }
+   
+    .contenedor_footer {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .row {
+        --bs-gutter-x: 2rem;
+        border: 0.5px solid black;
+    }
+}
+
+
+@media screen and (min-width: 420px) and (max-width: 575px) {
+    .header_flexible {
+        padding-bottom: 25px;
+    }
+    .contenedor_header {
+        max-width: 90%;
+        flex-direction: column;
+    }
+    .logo {
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 0;
+        padding-right: 5rem;
+        margin-bottom: 0.5rem;
+    }
+    .logo h3 {
+        font-size: 2rem;
+    }
+    .imagen_logo {
+        width: 30%;
+    }
+    .navegador {
+        width: 100%;
+        flex-direction: column;
+        padding-right: initial;
+    }
+    .link {
+        border-bottom: 1px solid gray;
+        display: inline-block;
+        width: 100%;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+        padding-left: 0.8rem;
+        font-size: 1.2rem;
+    }
+        
+
+    .seccion_principal {
+        height: 80vh;
+        justify-content: center;
+    }
+    .contenido_principal {
+        width: 90%;
+        text-align: left;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .contenedor_sections {
+        display: flex;
+        flex-direction: column;
+    }
+    .seccion_tarjetas {
+        padding-bottom: 0;
+    }
+    .titulo_tarjetas {
+        padding-top: 0.3rem;
+        padding-bottom: 0.5rem;
+    }
+    .titulo_tarjetas h2 {
+        font-size: 2.8rem;
+    }
+    .titulo_tarjetas h5 {
+        font-size: 1.2rem;
+    }
+    .contenedor_flex_tarjetas {
+        flex-direction: column;
+        align-items: center;    
+    }
+    .tarjetas {
+        width: 85%;
+        margin-bottom: 1.5rem;
+    }
+    .contenido_tarjetas h3 {
+        font-size: 2rem;
+    }
+    .subtitulos_tarjetas {
+        font-size: 1.3rem;
+    }
+    .parrafo_tarjetas {
+        font-size: 1.3rem;
+    }
+
+    .seccion_dividida {
+        padding-top: 1rem;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    .contenido_izquierda {
+        height: 70vh;
+        width: 100%;
+        background-position: center;
+    }
+    .contenido_derecha {
+        width: 100%;
+        padding: 1.6rem;
+        font-size: 1.1rem; 
+    }
+    .contenido_derecha h2 {
+        font-size: 2rem;
+    }
+    .parrafo_derecha {
+        font-size: 1.1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.7rem;
+    }
+
+    .contenedor_forms {
+        width: 80%;
+    }
+    .titulo_forms h2 {
+        font-size: 2.5rem;
+        margin-bottom: 0.3rem;
+    }
+    .titulo_forms h5 {
+        font-size: 0.9rem;
+        margin-bottom: 0.05rem;
+        color: gray;
+    }
+    .titulo_forms p {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 0.9rem;
+    }
+   
+    .contenedor_footer {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .row {
+        --bs-gutter-x: 2rem;
+        border: 0.5px solid black;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+    .header_flexible {
+        padding-bottom: 25px;
+    }
+    .contenedor_header {
+        max-width: 90%;
+        flex-direction: column;
+    }
+    .logo {
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 0;
+        padding-right: 5rem;
+        margin-bottom: 0.5rem;
+    }
+    .logo h3 {
+        font-size: 2rem;
+    }
+    .imagen_logo {
+        width: 30%;
+    }
+    .navegador {
+        width: 100%;
+        flex-direction: column;
+        padding-right: initial;
+    }
+    .link {
+        border-bottom: 1px solid gray;
+        display: inline-block;
+        width: 100%;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+        padding-left: 0.8rem;
+        font-size: 1.2rem;
+    }
+        
+
+    .seccion_principal {
+        height: 80vh;
+        justify-content: center;
+    }
+    .contenido_principal {
+        width: 90%;
+        text-align: left;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .contenedor_sections {
+        display: flex;
+        flex-direction: column;
+    }
+    .seccion_tarjetas {
+        padding-bottom: 0;
+    }
+    .titulo_tarjetas {
+        padding-top: 0.3rem;
+        padding-bottom: 0.5rem;
+    }
+    .titulo_tarjetas h2 {
+        font-size: 2.8rem;
+    }
+    .titulo_tarjetas h5 {
+        font-size: 1.2rem;
+    }
+    .contenedor_flex_tarjetas {
+        flex-direction: column;
+        align-items: center;    
+    }
+    .tarjetas {
+        width: 85%;
+        margin-bottom: 1.5rem;
+    }
+    .contenido_tarjetas h3 {
+        font-size: 2rem;
+    }
+    .subtitulos_tarjetas {
+        font-size: 1.3rem;
+    }
+    .parrafo_tarjetas {
+        font-size: 1.3rem;
+    }
+
+    .seccion_dividida {
+        padding-top: 1rem;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    .contenido_izquierda {
+        height: 70vh;
+        width: 100%;
+        background-position: center;
+    }
+    .contenido_derecha {
+        width: 100%;
+        padding: 1.6rem;
+        font-size: 1.1rem; 
+    }
+    .contenido_derecha h2 {
+        font-size: 2rem;
+    }
+    .parrafo_derecha {
+        font-size: 1.1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.7rem;
+    }
+
+    .contenedor_forms {
+        width: 80%;
+    }
+    .titulo_forms h2 {
+        font-size: 2.5rem;
+        margin-bottom: 0.3rem;
+    }
+    .titulo_forms h5 {
+        font-size: 0.9rem;
+        margin-bottom: 0.05rem;
+        color: gray;
+    }
+    .titulo_forms p {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 0.9rem;
+    }
+   
+    .contenedor_footer {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .row {
+        --bs-gutter-x: 3rem;
+        border: 0.5px solid black;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1268px) {
+    .logo {
+        width: 30%;
+    }
+}

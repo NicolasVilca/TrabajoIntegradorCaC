@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina Buenos Aires</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="script" href="./java/bootstrap.min.js">
+    </head>
+    <body>
+        <header class="header_flexible pt-1 pb-2">
+            <div class="contenedor_header">
+                <div class="logo">
+                    <img class="imagen_logo" src="./assets/imagenes/logo.png" alt="logo-codo a codo" loading="lazy">
+                    <h3>Conf. Bs.As</h3>
+                </div>
+                <nav class="navegador">
+                    <a class="link texto_blanco" href="#">La conferencia</a>
+                    <a class="link texto_gris" href="./pages/los_oradores.html">Los oradores</a>
+                    <a class="link texto_gris" href="./pages/lugar_y_fecha.html">El lugar y la fecha</a>
+                    <a class="link texto_gris" href="./pages/conviertete_en_orador.html">Conviertete en orador</a>
+                    <a class="link texto_verde" href="./pages/comprar_tickets.html">Comprar Tickets</a>
+                </nav>
+            </div>
+        </header>
+         
+        <main>
+            <section class="seccion_principal">
+                <div class="contenido_principal">
+                    <h1>Conf. Bs.As</h1>
+                    <p class="parrafo_principal">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                    <a class="btn btn-outline-light" href="./pages/conviertete_en_orador.html">Quiero ser orador</a>
+                    <a class="btn btn-info texto_blanco" href="./pages/comprar_tickets.html">Comprar Tickets</a>
+                </div>
+            </section>
+        </main>
+
+        <div class="contenedor_sections">
+        <section class="seccion_tarjetas pt-3 pb-3">
+            <div class="titulo_tarjetas">
+                <h5>CONOCE A LOS</h5>
+                <h2>ORADORES</h2>
+            </div>
+            <div class="main_tarjetas">
+                <div class="contenedor_flex_tarjetas">
+                    <div class="tarjetas">
+                        <img class="imagen_tarjetas" src="./assets/imagenes/steve.jpg" alt="Steve" loading="lazy">
+                        <div class="contenido_tarjetas">
+                            <div class="subtitulos_tarjetas pb-1">
+                                <span class="badge bg-warning texto_negro">JavaScript</span>
+                                <span class="badge bg-info">React</span>
+                            </div>
+                            <h3>Steve Jobs</h3>
+                            <p class="parrafo_tarjetas">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae itaque aperiam praesentium magni minima enim consequuntur earum delectus quod facilis reiciendis accusamus consequatur.</p>
+                        </div>
+                    </div>
+                    <div class="tarjetas">
+                        <img class="imagen_tarjetas" src="./assets/imagenes/bill.jpg" alt="Bill" loading="lazy">
+                        <div class="contenido_tarjetas">
+                            <div class="subtitulos_tarjetas pb-1">
+                                <span class="badge bg-warning texto_negro">JavaScript</span>
+                                <span class="badge bg-info">React</span>
+                            </div>
+                            <h3>Bill Gates</h3>
+                            <p class="parrafo_tarjetas">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae itaque aperiam praesentium magni minima enim consequuntur earum delectus quod facilis reiciendis accusamus consequatur.</p>
+                        </div>
+                    </div>
+                    <div class="tarjetas">
+                        <img class="imagen_tarjetas" src="./assets/imagenes/ada.jpeg" alt="Ada" loading="lazy">
+                        <div class="contenido_tarjetas">
+                            <div class="subtitulos_tarjetas pb-1">
+                                <span class="badge bg-secondary" >Negocios</span>
+                                <span class="badge bg-danger" >Startups</span>
+                            </div>
+                            <h3>Ada Lovelace</h3>
+                            <p class="parrafo_tarjetas">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae itaque aperiam praesentium magni minima enim consequuntur earum delectus quod facilis reiciendis accusamus consequatur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion_dividida">
+            <div class="contenido_izquierda">
+            </div>
+            <div class="contenido_derecha">
+                <h2>Bs As - Octubre</h2>
+                <p class="parrafo_derecha">Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos. Honolulu es la mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre en Honolulu se refuere al area urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km<sup>2</sup> de superficie).</p>
+                <a class="btn btn-outline-light" href="">Conoce mas</a>
+            </div>
+        </section>
+       
+        <section class="seccion_forms pt-3 pb-4">
+            <div class="contenedor_forms">
+                <div class="titulo_forms">
+                    <h5>CONVIERTETE EN UN</h5>
+                    <h2>ORADOR</h2>
+                    <p>Anotate como orador para dar una <span class="subrayado">charla ignite</span>. Cuentanos de que quieres hablar?</p>
+                </div>
+                <div class="formularios">
+                    <form action="">
+                        <div class="nombre_apellido pb-3">
+                        <input class="nombre form-control form-control-sm" type="text" placeholder="Nombre" required>
+                        <input class="apellido form-control form-control-sm" type="text" placeholder="Apellido" required>
+                        </div>
+                        <textarea class="area_texto form-control form-control-md" name="" placeholder="Sobre que quiere hablar?" required></textarea>
+                        <p class="recordatorio pt-1">Recuerda incluir un titulo para su charla</p>
+                        <div>
+                            <input type="submit" class="btn btn-info texto_blanco btn_enviar" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        </div>
+      
+        <div>
+            <footer class="fondo_footer">
+                <div class="contenedor_footer">
+                    <div class="row">
+                        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="Preguntas frecuentes">Preguntas <br> frecuentes</a> </div>
+                        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="Contactanos">Contactanos</a> </div>
+                        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="Prensa">Prensa</a> </div>
+                        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="Conferencias">Conferencias</a> </div>
+                        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="Terminos y condiciones">Terminos y condiciones</a> </div>
+                        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="Privacidad">Privacidad</a> </div>
+                        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="Estudiantes">Estudiantes</a> </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+         
+        <script src="./java/bootstrap.min.js"></script>
+    </body>
+</html>
