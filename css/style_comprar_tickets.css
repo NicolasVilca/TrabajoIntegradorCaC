@@ -1,0 +1,138 @@
+.header_flexible {
+    background-color: rgb(53 58 64);
+    display: flex;
+    justify-content: center;
+    height: 11vh;
+}
+.contenedor_header {
+    display: flex;
+    width: 95%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-left: 3rem;
+    color: white;
+}
+.logo h3 {
+    font-size: 1.5rem;
+}
+
+.navegador {   
+    padding-right: 3rem;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.texto_blanco {
+    color: white;
+}
+.texto_blanco:hover {
+    color: white;
+}
+.texto_gris {
+    color: rgb(179, 177, 177);
+}
+.texto_gris:hover {
+    color: white;
+}
+.texto_verde {
+    color: rgb(29, 198, 29);
+}
+.texto_verde:hover {
+    color: rgb(30, 255, 30);
+}
+.texto_verde_claro {
+    color: rgb(30, 255, 30);
+}
+.texto_verde_claro:hover {
+    color: rgb(30, 255, 30);
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.categorias {
+    width: 55%;
+    justify-content: space-around;
+}
+.tarjeta_categorias {
+    width: 32%;
+}
+.borde-azul {
+    border: 2px solid rgb(60, 60, 193);
+}
+.borde-verde {
+    border: 2px solid rgb(43, 123, 80);
+}
+.borde-amarillo {
+    border: 2px solid rgb(222, 172, 24);
+}
+
+
+.nombre {
+    padding-right: 0.5rem;
+}
+.apellido {
+    padding-left: 0.5rem;
+}
+.cantidad {
+    padding-right: 0.5rem;
+}
+.titulo_cantidad {
+    display: flex;
+    text-align: left;
+    padding-left: 0.15rem;
+}
+.categoria {
+    padding-left: 0.5rem;
+}
+.titulo_categoria {
+    display: flex;
+    text-align: left;
+    padding-left: 0.15rem;
+}
+.total_pago {
+    padding: 0.8rem;
+}
+.form-control:disabled {
+    background-color: rgb(184, 217, 184);
+    opacity: 0.9;
+}
+.btn-info {
+    --bs-btn-bg: rgb(151, 201, 62);
+}
+.borrar {
+    padding-right: 0.5rem;
+}
+.resumen {
+    padding-left: 0.5rem;
+}
+
+
+.fondo_footer {
+    background-color: rgb(29, 58, 74);
+    height: 12vh;
+}
+.contenedor_footer {
+    width: 80%;
+    margin: 0 auto;
+}
+.row {
+    --bs-gutter-x: 0;
+    text-align: center;
+    align-items: center;
+}
+.row a:hover {
+    color: rgb(116, 117, 117);
+}

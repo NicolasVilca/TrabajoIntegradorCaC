@@ -1,18 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina Buenos Aires</title>
+        <link rel="stylesheet" href="./../css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../css/style_comprar_tickets.css">
+        <link rel="script" href="./../java/bootstrap.min.js">
+        <link rel="script" href="./../java/js_comprar_tickets.js">
+    </head>
     <body>
-        <img src="" alt="">
-        <h2>Conf. Bs.As</h2>
-        <a href="../index.html">Inicio</a>
-        <a href="galeria.html">Galeria</a>
-        <a href="informacion.html">Informacion</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="contacto.html">Contacto</a>
+        <header class="header_flexible pt-1 pb-2">
+            <div class="contenedor_header">
+                <div class="logo">
+                    <h3>Conf. Bs.As</h3>
+                </div>
+                <nav class="navegador">
+                    <a class="link texto_gris" href="./../index.html">La conferencia</a>
+                    <a class="link texto_gris" href="#">Los oradores</a>
+                    <a class="link texto_gris" href="#">El lugar y la fecha</a>
+                    <a class="link texto_gris" href="#">Conviertete en orador</a>
+                    <a class="link texto_verde_claro" href="pages/comprar_tickets.html">Comprar Tickets</a>
+                </nav>
+            </div>
+        </header>
+         
+        <main>
+            <div class="contenedor pt-3">
+                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center categorias">
+                    <div class="col tarjeta_categorias borde-azul">
+                        <div class="py-3">
+                        <h4 class="pt-2">Estudiante</h4>
+                        </div>
+                        <div class="card-body">
+                        <h5 class="fw-normal">Tienen un descuento</h54>
+                        <div class="list-unstyled mt-3 mb-4">
+                            <p class="fw-bold pb-2"> 80% </p>
+                            <p class="fw-light"> * presentar documentacion </p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col tarjeta_categorias borde-verde">
+                        <div class="py-3">
+                        <h4 class="pt-2">Trainee</h4>
+                        </div>
+                        <div class="card-body">
+                        <h5 class="fw-normal">Tienen un descuento</h54>
+                        <div class="list-unstyled mt-3 mb-4">
+                            <p class="fw-bold pb-2"> 50% </p>
+                            <p class="fw-light"> * presentar documentacion </p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col tarjeta_categorias borde-amarillo">
+                        <div class="py-3">
+                        <h4 class="pt-2">Junior</h4>
+                        </div>
+                        <div class="card-body">
+                        <h5 class="fw-normal">Tienen un descuento</h54>
+                        <div class="list-unstyled mt-3 mb-4">
+                            <p class="fw-bold pb-2"> 15% </p>
+                            <p class="fw-light"> * presentar documentacion </p>
+                        </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="row g-5 pb-3">
+                <div class="col-md-2 col-lg-3"></div>
+                <div class="col-md-8 col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <h5 class="">VENTA</h5>
+                            <h1>VALOR DE TICKET $200
+                            </h1>
+                        </div>
+                        <div class="col-sm-6 nombre">
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre" value="" required="">
+                            <div class="invalid-feedback">
+                                Ingrese su nombre.
+                            </div>
+                        </div>
+            
+                        <div class="col-sm-6 apellido">
+                            <input type="text" class="form-control" id="apellido" placeholder="Apellido" value="" required="">
+                            <div class="invalid-feedback">
+                                Ingrese su apellido.
+                            </div>
+                        </div>
+            
+                        <div class="col-12">
+                        <div class="input-group has-validation">
+                            <input type="text" class="form-control" id="correo" placeholder="Correo" required="">
+                            <div class="invalid-feedback">
+                                Ingrese su correo.
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="col-sm-6 cantidad">
+                            <label for="firstName" class="form-label titulo_cantidad">Cantidad</label>
+                            <input type="text" class="form-control" id="cant_tickets" placeholder="Cantidad" value="" required="">
+                            <div class="invalid-feedback">
+                                Ingrese una cantidad.
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 categoria">
+                            <label for="firstName" class="form-label titulo_categoria">Categoria</label>
+                            <select class="form-select form-control" id="categoria" aria-label=".form-select-sm example">
+                                <option selected>Selecciona una categoria</option>
+                                <option value="1">Sin categoria</option>
+                                <option value="2">Estudiante</option>
+                                <option value="3">Trainee</option>
+                                <option value="4">Junior</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Debe seleccionar una categoria.
+                            </div>
+                        </div>
+
+                        <div class="col-12 pt-3 pb-3">
+                            <input type="text" class="form-control total_pago" id="total_pago" value="Total a pagar: $" aria-label="Disabled input example" disabled readonly >
+                        </div>
+
+                        <div class="col-sm-6 borrar pb-2" onclick="borrar_datos()">
+                            <button class="w-100 btn btn-info texto_blanco">
+                                Borrar
+                            </button>
+                        </div>
+
+                        <div class="col-sm-6 resumen pb-2" onclick="precio_final()">
+                            <button class="w-100 btn btn-info texto_blanco">
+                                Resumen
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-3"></div>
+            </div>           
+            
+        </main>
+
+        <div>
+            <footer class="fondo_footer">
+                <div class="contenedor_footer">
+                    <div class="row">
+                        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="#">Preguntas <br> frecuentes</a> </div>
+                        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="#">Contactanos</a> </div>
+                        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="#">Prensa</a> </div>
+                        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="#">Conferencias</a> </div>
+                        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="#">Terminos y condiciones</a> </div>
+                        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="#">Privacidad</a> </div>
+                        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="#">Estudiantes</a> </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+         
+        <script src="./../java/bootstrap.min.js"></script>
+        <script src="./../java/js_comprar_tickets.js"></script>
     </body>
 </html>
