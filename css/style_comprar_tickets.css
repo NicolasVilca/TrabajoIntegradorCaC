@@ -136,3 +136,269 @@
 .row a:hover {
     color: rgb(116, 117, 117);
 }
+
+
+
+@media screen and (min-width: 350px) and (max-width: 420px) {
+    .header_flexible {
+        height: auto;
+    }
+    .contenedor_header {
+        max-width: 90%;
+        flex-direction: column;
+    }
+    .logo {
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 0;
+        padding-right: 5rem;
+        margin-bottom: 0.5rem;
+    }
+    .logo h3 {
+        font-size: 2rem;
+    }
+    .navegador {
+        width: 100%;
+        flex-direction: column;
+        padding-right: initial;
+    }
+    .link {
+        border-bottom: 1px solid gray;
+        display: inline-block;
+        width: 100%;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+        padding-left: 0.8rem;
+        font-size: 1.2rem;
+    }
+
+    .contenedor {
+        margin-top: 1rem;
+    }
+    .categorias {
+        width: 100%;
+    }
+    .tarjeta_categorias {
+        width: 30%;
+    }
+
+    .tarjeta_categorias {
+        width: 80%;
+        margin-bottom: 1.2rem;
+    }
+
+    .contenedor_forms {
+        --bs-gutter-y: 0.8rem;
+        width: 95%;
+        margin-left: 1rem;
+    }
+    .nombre {
+        padding-left: 0.5rem;
+    }
+    .apellido {
+        padding-right: 0.5rem;
+    }
+    .correo {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .cantidad {
+        padding-left: 0.5rem;
+    }
+    .categoria {
+        padding-right: 0.5rem;
+    }
+    .total {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .borrar {
+        padding-left: 0.5rem;
+    }
+    .resumen {
+        padding-right: 0.5rem;
+    }
+
+
+    .fondo_footer {
+        height: auto;
+    }
+    .contenedor_footer {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .contenedor_footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border: 0.5px solid black;
+    }
+    .row {
+        --bs-gutter-x: 3rem;
+    }
+}
+
+
+@media screen and (min-width: 420px) and (max-width: 575px) {
+    .header_flexible {
+        height: auto;
+    }
+    .contenedor_header {
+        max-width: 90%;
+        flex-direction: column;
+    }
+    .logo {
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 0;
+        padding-right: 5rem;
+        margin-bottom: 0.5rem;
+    }
+    .logo h3 {
+        font-size: 2rem;
+    }
+    .navegador {
+        width: 100%;
+        flex-direction: column;
+        padding-right: initial;
+    }
+    .link {
+        border-bottom: 1px solid gray;
+        display: inline-block;
+        width: 100%;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+        padding-left: 0.8rem;
+        font-size: 1.2rem;
+    }
+
+    .contenedor {
+        margin-top: 1rem;
+    }
+    .categorias {
+        width: 100%;
+    }
+    .tarjeta_categorias {
+        width: 30%;
+    }
+
+    .tarjeta_categorias {
+        width: 80%;
+        margin-bottom: 1.2rem;
+    }
+
+    .contenedor_forms {
+        --bs-gutter-y: 0.8rem;
+        width: 95%;
+        margin-left: 1rem;
+    }
+    .nombre {
+        padding-left: 0.5rem;
+    }
+    .apellido {
+        padding-right: 0.5rem;
+    }
+    .correo {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .cantidad {
+        padding-left: 0.5rem;
+    }
+    .categoria {
+        padding-right: 0.5rem;
+    }
+    .total {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .borrar {
+        padding-left: 0.5rem;
+    }
+    .resumen {
+        padding-right: 0.5rem;
+    }
+
+
+    .fondo_footer {
+        height: auto;
+    }
+    .contenedor_footer {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .contenedor_footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border: 0.5px solid black;
+    }
+    .row {
+        --bs-gutter-x: 3rem;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .header_flexible {
+        height: auto;
+    }
+    .contenedor_header {
+        max-width: 90%;
+        flex-direction: column;
+    }
+    .logo {
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 0;
+        padding-right: 5rem;
+        margin-bottom: 0.5rem;
+    }
+    .logo h3 {
+        font-size: 2rem;
+    }
+    .navegador {
+        width: 100%;
+        flex-direction: column;
+        padding-right: initial;
+    }
+    .link {
+        border-bottom: 1px solid gray;
+        display: inline-block;
+        width: 100%;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+        padding-left: 0.8rem;
+        font-size: 1.2rem;
+    }
+
+    .categorias {
+        width: 100%;
+    }
+    .tarjeta_categorias {
+        width: 30%;
+    }
+
+    .contenedor_forms {
+        --bs-gutter-y: 0.8rem;
+        width: 95%;
+        margin-left: 1rem;
+    }
+
+    .fondo_footer {
+        height: auto;
+    }
+    .contenedor_footer {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .contenedor_footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border: 0.5px solid black;
+    }
+    .row {
+        --bs-gutter-x: 3rem;
+    }
+}
